@@ -62,18 +62,20 @@ p {
 /* 代码文本 */
 code {
 	color: #c7254e;
-	background-color: #BC8F8F;
+	background-color: #f9f2f4;
 	border-radius: 4px;
 	padding: 2px 4px;
-	font-size: 100%;
+	font-size: 95%;
+	border-left: 1px solid #ff7e79;
 }
 p>code {
 	color: #c7264e;
-	background-color: #BC8F8F;
-	font-size: 1em;
+	background-color: #f9f2f4;
+	font-size: 0.95em;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
+	border-left: 1px solid #ff7e79;
 }
 /* image */
 img {
