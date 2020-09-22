@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - '**.md'
+      - 'init-test.el'
+      - 'init-refactoring.el'
+      - 'init.sh'
+      -  'mylisp/**'
+      - '.gitignore'
+      - '.gitmodules'
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: macos-10.15
+    strategy:
+      matrix:
+        emacs-version:
+          - 27.1
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - uses: purcell/setup-emacs@master
+      with:
+        version: ${{ matrix.emacs-version }}
+
+    - name: Check startup
+      run: ./init-test-startup.sh 
