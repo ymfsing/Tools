@@ -1,0 +1,6 @@
+[submodule "sr/QuantumultX"]
+	path = sr/QuantumultX
+	url = https://github.com/w37fhy/QuantumultX
+[submodule "sr/ACL4SSR"]
+	path = sr/ACL4SSR
+	url = https://github.com/ACL4SSR/ACL4SSR
