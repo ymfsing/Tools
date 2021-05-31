@@ -37,22 +37,6 @@ mapkey("pl", "Open link from clipboard", function () {
   });
 });
 
-// source: https://gist.github.com/Echostream/fe560aa30271172398cf432b7b281fd5
-mapkey("gi", "Go to edit box", function () {
-  var inputs = document.getElementsByTagName("input");
-  var input = null;
-  for (var i = 0; i < inputs.length; i++) {
-    if (inputs[i].type == "text") {
-      input = inputs[i];
-      break;
-    }
-  }
-  if (input) {
-    input.click();
-    input.focus();
-  }
-});
-
 // web archive
 mapkey("aw", "web archive", function () {
   javascript: void window.open("https://web.archive.org/save/" + location.href);
