@@ -18,7 +18,7 @@ settings.showModeStatus = true;
 settings.hintAlign = "left";
 
 // map
-mapkey("pu", "Open the clipboard's URL in the current tab", function () {
+mapkey("ou", "Open the clipboard's URL in the current tab", function () {
   navigator.clipboard.readText().then((text) => {
     if (text.startsWith("http://") || text.startsWith("https://")) {
       window.location = text;
@@ -27,10 +27,20 @@ mapkey("pu", "Open the clipboard's URL in the current tab", function () {
     }
   });
 });
-mapkey("pl", "Open link from clipboard", function () {
+mapkey("ol", "Open link from clipboard", function () {
   navigator.clipboard.readText().then((text) => {
     if (text.startsWith("http://") || text.startsWith("https://")) {
       tabOpenLink(text);
+    } else {
+      tabOpenLink("https://duckduckgo.com/?q=" + text);
+    }
+  });
+});
+
+mapkey("ay", "Downsub", function () {
+  navigator.clipboard.readText().then((text) => {
+    if (text.startsWith("https://www.youtube.com")) {
+      tabOpenLink("https://downsub.com/?url=" + text);
     } else {
       tabOpenLink("https://duckduckgo.com/?q=" + text);
     }
@@ -42,73 +52,7 @@ mapkey("aw", "web archive", function () {
   javascript: void window.open("https://web.archive.org/save/" + location.href);
 });
 
-function copyUsingNavigatorClipboard(text) {
-  navigator.clipboard.writeText(text);
-  Front.showBanner("Copied: " + text);
-}
-
-mapkey("yu", "Copy current page's URL", function () {
-  var text = document.location.href;
-  // hack for lark
-  if (USE_NAVIGATOR_CLIPBOARD_DOMAINS.includes(window.location.hostname)) {
-    copyUsingNavigatorClipboard(text);
-    return;
-  }
-  Clipboard.write(text);
-});
-
 // emacs capture
-vmapkey("ec", "emacs org capture", function () {
-  javascript: location.href =
-    "org-protocol:///capture-html?template=w&url=" +
-    encodeURIComponent(location.href) +
-    "&title=" +
-    encodeURIComponent(document.title || "[untitled page]") +
-    "&body=" +
-    encodeURIComponent(
-      (function () {
-        var html = "";
-        if (typeof window.getSelection != "undefined") {
-          var sel = window.getSelection();
-          if (sel.rangeCount) {
-            var container = document.createElement("div");
-            for (var i = 0, len = sel.rangeCount; i < len; ++i) {
-              container.appendChild(sel.getRangeAt(i).cloneContents());
-            }
-            html = container.innerHTML;
-          }
-        } else if (typeof document.selection != "undefined") {
-          if (document.selection.type == "Text") {
-            html = document.selection.createRange().htmlText;
-          }
-        }
-        var relToAbs = function (href) {
-          var a = document.createElement("a");
-          a.href = href;
-          var abs = a.protocol + "//" + a.host + a.pathname + a.search + a.hash;
-          a.remove();
-          return abs;
-        };
-        var elementTypes = [
-          ["a", "href"],
-          ["img", "src"],
-        ];
-        var div = document.createElement("div");
-        div.innerHTML = html;
-        elementTypes.map(function (elementType) {
-          var elements = div.getElementsByTagName(elementType[0]);
-          for (var i = 0; i < elements.length; i++) {
-            elements[i].setAttribute(
-              elementType[1],
-              relToAbs(elements[i].getAttribute(elementType[1]))
-            );
-          }
-        });
-        return div.innerHTML;
-      })()
-    );
-});
-
 vmapkey("er", "emacs org roam capture", function () {
   javascript: location.href =
     "org-protocol://roam-ref?template=r&ref=" +
@@ -150,55 +94,41 @@ mapkey("<Space>", "Choose a tab with omnibar", function () {
 });
 
 // Search Engine
-addSearchAliasX("bs", "bing", "https://www.bing.com/search?q=", "s");
 
-addSearchAliasX("zh", "zhihu", "https://www.zhihu.com/search?q=", "s");
+addSearchAliasX("z", "zhihu", "https://www.zhihu.com/search?q=", "s");
 
 addSearchAliasX(
-  "wx",
+  "x",
   "weixin",
   "https://weixin.sogou.com/weixin?type=2&query=",
   "s"
 );
 
 addSearchAliasX(
-  "bl",
-  "bilibili search",
+  "b",
+  "bilibili",
   "https://search.bilibili.com/all?keyword=",
   "s"
 );
 
 addSearchAliasX(
-  "we",
-  "wikipedia-en",
-  "http://en.wikipedia.org/wiki/Special:Search?search=",
-  "s"
-);
-
-addSearchAliasX(
-  "ks",
+  "k",
   "kindle",
   "http://www.amazon.cn/s/ref=nb_sb_noss?field-keywords=",
   "s"
 );
-addSearchAliasX("db", "douban", "http://www.douban.com/search?q=", "s");
-addSearchAliasX("gr", "goodreads", "https://www.goodreads.com/search?q=", "s");
+addSearchAliasX("a", "douban", "http://www.douban.com/search?q=", "s");
+addSearchAliasX("r", "goodreads", "https://www.goodreads.com/search?q=", "s");
 addSearchAliasX(
-  "lg",
+  "l",
   "Libraty Genesis",
   "https://libgen.is/search.php?req=",
   "s"
 );
 
-addSearchAliasX("cs", "grep.app", "https://grep.app/search?q=", "s");
-addSearchAliasX(
-  "gh",
-  "github",
-  "https://github.com/search?ref=opensearch&q=",
-  "s"
-);
+addSearchAliasX("c", "grep.app", "https://grep.app/search?q=", "s");
 
-addSearchAliasX("ec", "emacs china", "https://emacs-china.org/search?q=", "s");
+addSearchAliasX("o", "emacs china", "https://emacs-china.org/search?q=", "s");
 
 // unmap
 if (window.location.origin === "https://mail.google.com") {
