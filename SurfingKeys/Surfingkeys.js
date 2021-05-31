@@ -54,7 +54,7 @@ mapkey("gi", "Go to edit box", function () {
 });
 
 // web archive
-mapkey("wa", "web archive", function () {
+mapkey("aw", "web archive", function () {
   javascript: void window.open("https://web.archive.org/save/" + location.href);
 });
 
