@@ -37,7 +37,7 @@ mapkey("ol", "Open link from clipboard", function () {
   });
 });
 
-mapkey("ay", "Downsub", function () {
+mapkey("ad", "Downsub", function () {
   navigator.clipboard.readText().then((text) => {
     if (text.startsWith("https://www.youtube.com")) {
       tabOpenLink("https://downsub.com/?url=" + text);
@@ -53,7 +53,7 @@ mapkey("aw", "web archive", function () {
 });
 
 // emacs capture
-vmapkey("er", "emacs org roam capture", function () {
+vmapkey("ar", "emacs org roam capture", function () {
   javascript: location.href =
     "org-protocol://roam-ref?template=r&ref=" +
     encodeURIComponent(location.href) +
