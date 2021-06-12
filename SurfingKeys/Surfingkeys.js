@@ -95,12 +95,29 @@ mapkey("<Space>", "Choose a tab with omnibar", function () {
 
 // Search Engine
 
+removeSearchAliasX("d", "s");
+removeSearchAliasX("w", "s");
+
 addSearchAliasX("z", "zhihu", "https://www.zhihu.com/search?q=", "s");
 
 addSearchAliasX(
-  "x",
+  "wx",
   "weixin",
   "https://weixin.sogou.com/weixin?type=2&query=",
+  "s"
+);
+
+addSearchAliasX(
+  "wk",
+  "wikipedia",
+  "https://en.wikipedia.org/wiki/Special:Search/",
+  "s"
+);
+
+addSearchAliasX(
+  "wb",
+  "weibo",
+  "https://m.weibo.cn/search?containerid=100103type%3D1%26q%3D",
   "s"
 );
 
@@ -117,8 +134,11 @@ addSearchAliasX(
   "http://www.amazon.cn/s/ref=nb_sb_noss?field-keywords=",
   "s"
 );
-addSearchAliasX("a", "douban", "http://www.douban.com/search?q=", "s");
+
+addSearchAliasX("d", "douban", "http://www.douban.com/search?q=", "s");
+
 addSearchAliasX("r", "goodreads", "https://www.goodreads.com/search?q=", "s");
+
 addSearchAliasX(
   "l",
   "Libraty Genesis",
@@ -128,7 +148,7 @@ addSearchAliasX(
 
 addSearchAliasX("c", "grep.app", "https://grep.app/search?q=", "s");
 
-addSearchAliasX("o", "emacs china", "https://emacs-china.org/search?q=", "s");
+addSearchAliasX("e", "emacs china", "https://emacs-china.org/search?q=", "s");
 
 // unmap
 if (window.location.origin === "https://mail.google.com") {
