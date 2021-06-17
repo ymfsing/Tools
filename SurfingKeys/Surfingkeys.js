@@ -38,23 +38,25 @@ mapkey("ol", "Open link from clipboard", function () {
 });
 
 mapkey("ad", "Downsub", function () {
-  navigator.clipboard.readText().then((text) => {
-    if (text.startsWith("https://www.youtube.com")) {
-      tabOpenLink("https://downsub.com/?url=" + text);
-    } else {
-      tabOpenLink("https://duckduckgo.com/?q=" + text);
-    }
-  });
+  void window.open("https://downsub.com/?url=" + location.href);
+});
+
+mapkey("at", "Twitter", function () {
+  void window.open(
+    "https://threadreaderapp.com/thread/" +
+      location.href.replace(/[^0-9]/gi, "") +
+      ".html"
+  );
 });
 
 // web archive
 mapkey("aw", "web archive", function () {
-  javascript: void window.open("https://web.archive.org/save/" + location.href);
+  void window.open("https://web.archive.org/save/" + location.href);
 });
 
 // emacs capture
 vmapkey("ar", "emacs org roam capture", function () {
-  javascript: location.href =
+  location.href =
     "org-protocol://roam-ref?template=r&ref=" +
     encodeURIComponent(location.href) +
     "&title=" +
