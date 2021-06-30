@@ -49,7 +49,7 @@
     "5 0-23/6 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_wsdlb.js, tag=柠檬我是大老板农场, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
     "19 1-23/2 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_djjl.js, tag=东东电竞经理, img-url=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/icon/jd_EsportsManager.png",
     "35 7,17 * * * https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/jd_europeancup.js, tag=欧洲狂欢杯, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
-    "30 11,21 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_superBrand.js, tag=特物Z|万物皆可国创, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
+    "30 11,21 * * * https://gitee.com/asd920/Auto-jd/raw/main/jd_superBrand.js, tag=特物Z|万物皆可国创, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
     "30 16-23/1 * * * https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_half_redrain.js, tag=半点京豆雨, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
   ]
 }
