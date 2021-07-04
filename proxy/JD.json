@@ -32,6 +32,7 @@
     "20 8,18 * * * https://raw.githubusercontent.com/ymfsing/Tools/main/proxy/jd_scripts/jd_sgmh.js, tag=闪购盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
     "10 7,17 * * * https://raw.githubusercontent.com/ymfsing/Tools/main/proxy/jd_scripts/jd_ms.js, tag=京东秒秒币, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/shylocks/jd_ms.jpg",
     "0 7,17 * * * https://raw.githubusercontent.com/ymfsing/Tools/main/proxy/jd_scripts/jd_speed_sign.js, tag=京东极速版, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png",
+    "20 0,22 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_speed_redpocke.js, tag=京东极速版红包, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
     "10 0 * * * https://raw.githubusercontent.com/ymfsing/Tools/main/proxy/jd_scripts/jd_jin_tie.js, tag=领金贴, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
     "4 10,20 * * * https://raw.githubusercontent.com/ymfsing/Tools/main/proxy/jd_scripts/jd_market_lottery.js, tag=幸运大转盘, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
     "1 1,11,21 * * * https://raw.githubusercontent.com/ymfsing/Tools/main/proxy/jd_scripts/jd_jump.js, tag=跳跳乐瓜分京豆, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
@@ -48,6 +49,7 @@
     "5 0-23/6 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_wsdlb.js, tag=柠檬我是大老板农场, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
     "19 1-23/2 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_djjl.js, tag=东东电竞经理, img-url=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/icon/jd_EsportsManager.png",
     "30 16-23/1 * * * https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_half_redrain.js, tag=半点京豆雨, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
-    "35 1,23 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_nzmh.js, tag=女装盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
+    "35 1,23 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_nzmh.js, tag=女装盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
+    "15 3,6,13,19,21 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_ddo_pk.js, tag=京享值PK, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
   ]
 }
