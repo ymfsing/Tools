@@ -50,6 +50,7 @@
     "19 1-23/2 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_djjl.js, tag=东东电竞经理, img-url=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/icon/jd_EsportsManager.png",
     "30 16-23/1 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_half_redrain.js, tag=半点京豆雨, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
     "35 1,23 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_nzmh.js, tag=女装盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
-    "15 3,6,13,19,21 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_ddo_pk.js, tag=京享值PK, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
+    "15 3,6,13,19,21 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_ddo_pk.js, tag=京享值PK, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
+    "1 4,14 * 6 * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_qjd.js, tag=全民抢京豆, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
   ]
 }
