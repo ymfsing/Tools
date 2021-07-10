@@ -53,6 +53,8 @@
     "15 3,6,13,19,21 * * * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_ddo_pk.js, tag=京享值PK, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
     "1 4,14 * 6 * https://raw.githubusercontent.com/asd920/Auto-jd/main/jd_qjd.js, tag=全民抢京豆, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
     "41 6-23/3 * * * https://raw.githubusercontent.com/jiulan/platypus/main/scripts/jd_summer_movement.js, tag=燃动夏季, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
-    "20 1-23/2 * * *  https://raw.githubusercontent.com/jiulan/platypus/main/scripts/jd_joy_park.js, tag=汪汪乐园, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
+    "20 1-23/2 * * *  https://raw.githubusercontent.com/jiulan/platypus/main/scripts/jd_joy_park.js, tag=汪汪乐园, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
+    "1 8 * * * https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/jd_wxFans.js, tag=粉丝互动, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
+    "30 6 * * * https://raw.githubusercontent.com/cdle/jd_study/main/jd_goodMorning.js, tag=早起福利, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
   ]
 }
