@@ -55,6 +55,7 @@
     "41 6-23/3 * * * https://raw.githubusercontent.com/jiulan/platypus/main/scripts/jd_summer_movement.js, tag=燃动夏季, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
     "20 1-23/2 * * *  https://raw.githubusercontent.com/jiulan/platypus/main/scripts/jd_joy_park.js, tag=汪汪乐园, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
     "1 8 * * * https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/jd_wxFans.js, tag=粉丝互动, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
-    "30 6 * * * https://raw.githubusercontent.com/cdle/jd_study/main/jd_goodMorning.js, tag=早起福利, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
+    "30 6 * * * https://raw.githubusercontent.com/cdle/jd_study/main/jd_goodMorning.js, tag=早起福利, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
+    "15 2,14,22 * * * https://raw.githubusercontent.com/zwf234/rules/master/js/jd_sendBeans.js, tag=送豆得豆, img-url=https://qxzy.top/rules/QuantumultX/img/jd.png"
   ]
 }
