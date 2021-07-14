@@ -162,6 +162,7 @@ if (window.location.origin === "https://mail.google.com") {
   unmap("m");
 }
 
+
 // Theme
 settings.theme = `
 .sk_theme input {
